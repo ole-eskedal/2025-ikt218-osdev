@@ -71,9 +71,8 @@ add_executable(uiaos-kernel
 	src/memory/malloc.c
 	src/memory/paging.c
 	src/pit/pit.c
-	
-	
-	
+	src/music/songplayer.c
+    src/music/song1.c
 )
 
 # Include directories for the kernel target

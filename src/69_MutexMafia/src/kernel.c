@@ -10,7 +10,7 @@
 #include "memory/malloc.h"
 #include "memory/paging.h"
 #include "pit/pit.h"
-
+#include "music/songplayer.h"
 
 
 
@@ -44,7 +44,16 @@ int main(uint32_t magic, struct multiboot_info* mb_info_addr) {
     void* memory3 = malloc(13331);
     print_memory_layout();
 
+    mafiaPrint("Trying to play sound...");
+    while (1)
+    {
+        play_sound(440);         // A4 (audible tone)
+        sleep_interrupt(1000);   // 1 second
+        stop_sound();
+    }
     
+    
+
     return kernel_main(); 
 
 }
