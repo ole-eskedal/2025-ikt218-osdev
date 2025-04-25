@@ -31,10 +31,8 @@ int main(uint32_t magic, struct multiboot_info* mb_info_addr) {
     initIdt();
     init_kernel_memory(&end);
     init_paging();
-    init_pit();
-    test_pit();
+   
     
-    //init_Pit
 
     initKeyboard();
     mafiaPrint("Wadiyatalkinabeet\n");

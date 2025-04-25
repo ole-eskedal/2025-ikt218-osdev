@@ -54,7 +54,7 @@ void sleep_busy(uint32_t milliseconds) {
 uint32_t get_ticks() {
     return ticks;
 }
-
+/*
 void test_pit() {
     mafiaPrint("=== PIT TEST START ===\n");
 
@@ -99,3 +99,5 @@ void test_pit() {
 
     mafiaPrint("=== PIT TEST END ===\n");
 }
+
+*/
